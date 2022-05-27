@@ -1,0 +1,164 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "nahian",
+      "age": "25",
+      "skill": "MEARN STACK"
+    },
+    {
+      "id": 2,
+      "name": "farid",
+      "age": "28",
+      "skill": "Teacher"
+    }
+  ],
+  "tags": [
+    {
+      "id": 2,
+      "name": "Apple Mac",
+      "slug": "apple-mac"
+    },
+    {
+      "id": 3,
+      "name": "space x",
+      "slug": "space-x"
+    },
+    {
+      "id": 4,
+      "name": "microsoft windos",
+      "slug": "microsoft-windos"
+    },
+    {
+      "id": 5,
+      "name": "ali baba",
+      "slug": "ali-baba"
+    },
+    {
+      "id": 6,
+      "name": "mercedice benz",
+      "slug": "mercedice-benz"
+    }
+  ],
+  "products": [
+    {
+      "id": 7,
+      "name": "panjabi",
+      "slug": "panjabi",
+      "price": "1500",
+      "rating": "5",
+      "sprice": "1120",
+      "categoryId": "10",
+      "tagId": "3",
+      "desc": "Punjabi & Fotua Price In Bangladesh, PriyoShop.com - Online Shopping in Bangladesh\nVisit\nImages may be subject to copyright. Learn More",
+      "photo": "https://priyoshopbackup.blob.core.windows.net/priyoshop/content/Images/Thumbs/0230483_cotton-punjabi-for-men-bdaa01pn21111_415.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "shart",
+      "slug": "shart",
+      "price": "3556",
+      "rating": "3",
+      "sprice": "3400",
+      "desc": "Special Men's Cotton Punjabi: Buy Online at Best Prices in Bangladesh | Daraz.com.bd\nVisit\nImages may be subject to copyright. Learn More",
+      "photo": "https://static-01.daraz.com.bd/p/c5e13c39ed9f3d5ee320fb6b87006667.jpg",
+      "categoryId": "9",
+      "tagId": "3"
+    },
+    {
+      "id": 10,
+      "name": "ladies sari",
+      "slug": "ladies-sari",
+      "price": "5099",
+      "sprice": "",
+      "rating": "2",
+      "desc": "Jom Saree Skyblue colour Saree Same as picture Saari for woman Sari collection Saree for woman Tangail saree Shari for woman Saari for girl Saari for woman,Tangail Tat Shilpo (TAN): Buy Online\nVisit\nImages may be subject to copyright. Learn more",
+      "photo": "https://static-01.daraz.com.bd/p/b25ccced9e96e904f01b5ed2145d6ea5.jpg",
+      "categoryId": "9",
+      "tagId": "5"
+    },
+    {
+      "id": 11,
+      "name": "blezer jense",
+      "slug": "blezer-jense",
+      "price": "10000",
+      "sprice": "",
+      "rating": "2",
+      "categoryId": "11",
+      "tagId": "6",
+      "desc": "Pin on Men's Going-Out\nVisit\nImages may be subject to copyright. Learn more",
+      "photo": "https://i.pinimg.com/originals/cd/9a/1d/cd9a1dde8fcbea8d3b290220615348c1.jpg"
+    },
+    {
+      "id": 12,
+      "name": "formal dress 2022",
+      "price": "15000",
+      "sprice": "13500",
+      "rating": "5",
+      "categoryId": "10",
+      "tagId": "3",
+      "desc": "Copyright ownership gives the owner the exclusive right to use the work, with some exceptions. When a person creates an original work, fixed in a tangible medium, he or she automatically owns copyright to the work.",
+      "photo": "https://www.fashionbeans.com/wp-content/uploads/2018/09/formal-attire-img-3.jpg",
+      "updateId": 12
+    }
+  ],
+  "categories": [
+    {
+      "id": 8,
+      "name": "tanes play",
+      "slug": "tanes-play"
+    },
+    {
+      "id": 9,
+      "name": "football play",
+      "slug": "football-play"
+    },
+    {
+      "id": 10,
+      "name": "batminton play",
+      "slug": "batminton-play"
+    },
+    {
+      "id": 11,
+      "name": "men",
+      "slug": "men"
+    },
+    {
+      "id": 12,
+      "name": "women clothes",
+      "slug": "women-clothes"
+    }
+  ],
+  "students": [
+    {
+      "name": "Nahian",
+      "email": "nahi@gmail.com",
+      "photo": "https://cdn.powerpackelements.com/wp-content/uploads/2017/11/Team-memeber-13.png",
+      "id": 1
+    },
+    {
+      "name": "Farid",
+      "email": "f@gmail.com",
+      "photo": "https://www.alhaya-medical.com/wp-content/uploads/2017/11/team-member.jpg",
+      "id": 2
+    },
+    {
+      "name": "Prosenjit Kumar",
+      "email": "pro@gmail.com",
+      "photo": "https://unitedthemes.com/wp-content/uploads/2018/09/team2.jpg",
+      "id": 3
+    },
+    {
+      "name": "Ashraful haque",
+      "email": "haq@gmail.com",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmf-D-xHLrHdFexvJRJfxh0SR_jEwNPPw4gXpN5dpXq1TwOZxKCleGW1FIOunycxATVD8&usqp=CAU",
+      "id": 4
+    },
+    {
+      "name": "Nipu",
+      "email": "n@gmail.com",
+      "photo": "http://aliensix.com/particles-1.3/HTML/images/team-member-1.jpg",
+      "id": 5
+    }
+  ]
+}
