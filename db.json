@@ -131,19 +131,7 @@
   ],
   "students": [
     {
-      "name": "Nahian",
-      "email": "nahi@gmail.com",
-      "photo": "https://cdn.powerpackelements.com/wp-content/uploads/2017/11/Team-memeber-13.png",
-      "id": 1
-    },
-    {
-      "name": "Farid",
-      "email": "f@gmail.com",
-      "photo": "https://www.alhaya-medical.com/wp-content/uploads/2017/11/team-member.jpg",
-      "id": 2
-    },
-    {
-      "name": "Prosenjit Kumar",
+      "name": "Prosenjit Kumar khan",
       "email": "pro@gmail.com",
       "photo": "https://unitedthemes.com/wp-content/uploads/2018/09/team2.jpg",
       "id": 3
@@ -153,12 +141,6 @@
       "email": "haq@gmail.com",
       "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmf-D-xHLrHdFexvJRJfxh0SR_jEwNPPw4gXpN5dpXq1TwOZxKCleGW1FIOunycxATVD8&usqp=CAU",
       "id": 4
-    },
-    {
-      "name": "Nipu",
-      "email": "n@gmail.com",
-      "photo": "http://aliensix.com/particles-1.3/HTML/images/team-member-1.jpg",
-      "id": 5
     }
   ]
 }

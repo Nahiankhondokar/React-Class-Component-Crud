@@ -17,7 +17,14 @@ class Student extends Component {
       msg : '',
       type : ''
     }, 
-    students : []
+    students : [],
+    dataId : '',
+    stuView : {},
+    stuEdit : {
+      name : '',
+      email : '',
+      photo : ''
+    }
   }
 
 
@@ -38,7 +45,7 @@ class Student extends Component {
 
     // state distructure
     const { status, type } = this.state.modal;
-    const { students } = this.state;
+    const { students, dataId, stuView, stuEdit } = this.state;
 
     // Modal show
     const handleModalShow = (e) => {
@@ -64,39 +71,85 @@ class Student extends Component {
     }
 
 
-    // Modal View
+
+    // student View
     const handleView = (id) => {
+
+      let single = students.find( (data) => data.id === id);
+
       this.setState({
         ...this.state,
         modal : {
           status : true,
           type : 'view'
-        }
+        },
+        stuView : single
       });
+
     }
 
-  // Modal Delete
+  // student Delete
   const handleDelete = (id) => {
     this.setState({
       ...this.state,
       modal : {
         status : true,
         type : 'delete'
-      }
+      }, 
+      dataId : id
     });
   }
+
+
+    // student Edit
+  const handleEdit = (id) => {
+
+    let edit = students.find( (data) => data.id === id);
+
+    this.setState({
+      ...this.state,
+      modal : {
+        status : true,
+        type : 'edit'
+      },
+      stuEdit : edit
+    });
+
+  }
+
+  // Get Student Update data
+  const handleStudentUpdate = (obj) => {
+
+    this.setState((prevState) => ({
+      ...prevState,
+      stuEdit : {
+        id    : obj.id,
+        name : obj.name,
+        email : obj.email,
+        photo : obj.photo
+      }
+    }));
+
+    
+
+  }
+
 
 
   // Get All Student 
   const GetAllStudent = () => {
 
-    axios.get('http://localhost:5050/students')
-    .then(res => {
-      this.setState((prevState) => ({
-        ...prevState,
-        students : res.data
-      }));
-    });
+    try{
+      axios.get('http://localhost:5050/students')
+      .then(res => {
+        this.setState((prevState) => ({
+          ...prevState,
+          students : res.data
+        }));
+      });
+    }catch(err){
+      console.log(err);
+    }
 
   }
   GetAllStudent();
@@ -106,7 +159,7 @@ class Student extends Component {
     return (
       <>
   
-        <StudentModal show={ status } type={ type } handleModalHide={ handleModalHide } />
+        <StudentModal show={ status } type={ type } handleModalHide={ handleModalHide } dataId={ dataId } allStudent={ GetAllStudent } stuView={ stuView } stuEdit={ stuEdit } handleStudentUpdate={handleStudentUpdate} />
 
         <section className="student my-5">
         <Container>
@@ -139,9 +192,9 @@ class Student extends Component {
                             <td>{ data.email }</td>
                             <td><img style={{ width : '40px', height : '40px'}} src={ data.photo } alt="" /></td>
                             <td>
-                            <Button onClick={ () => handleView(2) } className='btn-sm' variant='info'>View</Button>&nbsp;
-                            <Button onClick='' className='btn-sm' variant='warning'>Edit</Button>&nbsp;
-                            <Button onClick={ () => handleDelete(2) } className='btn-sm' variant='danger'>Delete</Button>
+                            <Button onClick={ () => handleView(data.id) } className='btn-sm' variant='info'>View</Button>&nbsp;
+                            <Button onClick={ () => handleEdit(data.id) } className='btn-sm' variant='warning'>Edit</Button>&nbsp;
+                            <Button onClick={ () => handleDelete(data.id) } className='btn-sm' variant='danger'>Delete</Button>
                             </td>
                           </tr>
                           )
