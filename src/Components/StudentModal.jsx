@@ -4,15 +4,15 @@ import { Form, Modal, Button } from 'react-bootstrap';
 
 class StudentModal extends Component {
     constructor(props){
-        super(props);
+      super(props);
 
-        this.state = {
-          input : {
-            name : '',
-            email : '',
-            photo : ''
-          }
+      this.state = {
+        input : {
+          name : '',
+          email : '',
+          photo : ''
         }
+      }
     }
 
 
@@ -96,7 +96,7 @@ class StudentModal extends Component {
                         ...prevState.input,
                         name : e.target.value
                       }
-                    })) }></Form.Control>
+                    }))}></Form.Control>
                 </Form.Group>
 
                 <Form.Group>
